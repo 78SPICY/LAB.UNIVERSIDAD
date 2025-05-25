@@ -74,7 +74,7 @@ public class Centro implements Comparable<Centro> {
 	}
 	
 	
-	// Método equals(){
+	// Método equals()
 	public boolean equals(Object obj) {
 		boolean res = false;
 		if (obj instanceof Centro) {
@@ -85,13 +85,13 @@ public class Centro implements Comparable<Centro> {
 	}
 	
 	
-	// Método hashCode(){
+	// Método hashCode()
 	public int hashCode() {
 		return nombre.hashCode();
 	}
 	
 	
-	// Método compareTo(){
+	// Método compareTo()
 	public int compareTo(Centro a) {
 		return nombre.compareTo(a.nombre);
 	}

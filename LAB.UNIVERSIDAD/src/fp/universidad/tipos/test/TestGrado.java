@@ -8,29 +8,29 @@ import fp.universidad.tipos.Grado;
 public class TestGrado {
 
 	public static void main(String[] args) {
-		Set<Asignatura> asignaturasObligatoriasJesus = new HashSet<>();
+		Set<Asignatura> asignaturasObligatoriasRosa = new HashSet<>();
 		Asignatura redesComputadores = new Asignatura("Redes de Computadores", "2060009", 1.0, TipoAsignatura.PRIMER_CUATRIMESTRE, 2025);
 		Asignatura diseñoDatos = new Asignatura("Diseño de Datos y Algoritmos", "2060008", 1.0, TipoAsignatura.SEGUNDO_CUATRIMESTRE, 2025);
-		asignaturasObligatoriasJesus.add(diseñoDatos);
-		asignaturasObligatoriasJesus.add(redesComputadores);
+		asignaturasObligatoriasRosa.add(diseñoDatos);
+		asignaturasObligatoriasRosa.add(redesComputadores);
 		
-		Set<Asignatura> asignaturasOptativasJesus = new HashSet<>();
+		Set<Asignatura> asignaturasOptativasRosa = new HashSet<>();
 		Asignatura logicaInformatica = new Asignatura("Lógica Informática", "2084319", 1.0, TipoAsignatura.ANUAL, 2025);
-		asignaturasOptativasJesus.add(logicaInformatica);
+		asignaturasOptativasRosa.add(logicaInformatica);
 
-		Set<Asignatura> asignaturasObligatoriasOscar = new HashSet<>();
+		Set<Asignatura> asignaturasObligatoriasAna = new HashSet<>();
 		Asignatura ingenSoft = new Asignatura("Introducción a la Ingeniería del Software y los Sistemas de Información", "1680008", 1.0, TipoAsignatura.ANUAL, 2025);
 		Asignatura topologia = new Asignatura("Topologia", "1880009", 1.0, TipoAsignatura.PRIMER_CUATRIMESTRE, 2025);
-		asignaturasObligatoriasOscar.add(ingenSoft);
-		asignaturasObligatoriasOscar.add(topologia);
+		asignaturasObligatoriasAna.add(ingenSoft);
+		asignaturasObligatoriasAna.add(topologia);
 		
-		Set<Asignatura> asignaturasOptativasOscar = new HashSet<>();
+		Set<Asignatura> asignaturasOptativasAna = new HashSet<>();
 		Asignatura analisisFunc = new Asignatura("Análisis Funcional", "3680438", 1.0, TipoAsignatura.ANUAL, 2025);
-		asignaturasOptativasOscar.add(analisisFunc);
+		asignaturasOptativasAna.add(analisisFunc);
 
 
-		Grado ttII = new Grado("Grado en Ingeniería Informática - Tecnologías Informáticas", asignaturasObligatoriasJesus, asignaturasOptativasJesus, 108.0);
-		Grado dobleGrado = new Grado("Doble Grado en Ingeniería Informática - Tecnologías Informáticas y en Matemáticas", asignaturasObligatoriasOscar, asignaturasOptativasOscar, 102.0);
+		Grado ttII = new Grado("Grado en Ingeniería Informática - Tecnologías Informáticas", asignaturasObligatoriasAna, asignaturasOptativasAna, 108.0);
+		Grado dobleGrado = new Grado("Doble Grado en Ingeniería Informática - Tecnologías Informáticas y en Matemáticas", asignaturasObligatoriasRosa, asignaturasOptativasRosa, 102.0);
 		
 		System.out.println("PRUEBA DEL TIPO GRADO");
 		System.out.println("Representación del tipo Grado ===> " + ttII.toString());
